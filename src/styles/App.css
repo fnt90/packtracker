@@ -42,6 +42,7 @@
   width: 100%;
   padding: 8px;
   font-family: 'Lexend', sans-serif;
+  font-size: 12px;
 }
 
 .footerBar p {
@@ -70,6 +71,7 @@
   margin-right: 24px;
   margin-bottom: 100px;
   font-family: 'Lexend', sans-serif;
+  max-width: 700px;
 }
 
 input[type="submit" i] {
