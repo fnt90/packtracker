@@ -1,5 +1,7 @@
 import { MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
+import DateTime from "./Readable";
+import OrderStatus from "./OrderStatus"
 
 export default function PackageItem({ parcel_id, status, eta, sender, 
   last_updated, notes, location_coordinate_latitude, location_coordinate_longitude, 
@@ -7,14 +9,14 @@ export default function PackageItem({ parcel_id, status, eta, sender,
 return (
   <div>
     <h3><i class="fas fa-box"></i> Parcel ID: {parcel_id}</h3>
-    <p><span>Status:</span> {status}</p>
-    <p><span>ETA:</span> {eta}</p>
-    <p><span>Sender:</span> {sender}</p>
-    <p><span>Notes:</span> {notes} </p>
+    <p><span className="boldspan">Status:</span> <OrderStatus orderStatus={status} /></p>
+    <p><span className="boldspan">ETA:</span>  <DateTime dateString={eta} /></p>
+    <p><span className="boldspan">Sender:</span> {sender}</p>
+    <p><span className="boldspan">Notes:</span> {notes != null ? ({notes}) : <span>none</span>} </p>
     <p>
-      <span>Location:</span> {location_name} at {location_coordinate_latitude}, {location_coordinate_longitude}
+      <span className="boldspan">Pickup Location:</span> {location_name} at {location_coordinate_latitude}, {location_coordinate_longitude}
     </p>
-    <p><span>Last Updated:</span> {last_updated}</p>
+    <p><span className="boldspan">Last Updated:</span> <DateTime dateString={last_updated} /></p>
     
     <MapContainer center={[location_coordinate_latitude, location_coordinate_longitude]} zoom={13} scrollWheelZoom={false}>
       <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

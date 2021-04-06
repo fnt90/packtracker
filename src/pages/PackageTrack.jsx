@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useState, useEffect } from "react";
+import backup from "../data/orders.json";
 
 export default function PackageTrack(props) {
 
@@ -29,15 +30,16 @@ function onFetchSuccess(json) {
   }
 
   function onFetchFail(error) {
-    console.log("Error", error);
+    console.log("Error: Failed to load from Mockaroo, loading backup data", error);
+    setPackages(backup);
     setStatus(2);
   }
 const PackageIDList = props.packages.map((packageInfo) =>{
   return (
     <div>
       <ul>
-        <li><i class="fas fa-box"></i><span> Parcel ID:</span> {packageInfo.parcel_id}</li>
-        <li><span>Sender:</span> {packageInfo.sender}</li>  
+        <li><i class="fas fa-box"></i><span className="boldspan"> Parcel ID:</span> {packageInfo.parcel_id}</li>
+        <li><span className="boldspan">Sender:</span> {packageInfo.sender}</li>  
       </ul>
     </div>
   )
@@ -61,13 +63,8 @@ const PackageIDList = props.packages.map((packageInfo) =>{
       </p>
       <p>
       {status === 0 && <div>Loading...</div>}
-      {status === 1 && (
-        <div> 
-        Your current packages:
-          {PackageIDList}
-        </div>
-      )}
-      {status === 2 && <div>Please check your connection</div>}
+      {status === 1 && (<div>Your current packages:{PackageIDList}</div>)}
+      {status === 2 && (<div> Your current packages: {PackageIDList}</div>)}
       </p>
     </section>
   );

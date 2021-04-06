@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import PackageTrack from "./pages/PackageTrack";
 import SearchResults from "./pages/SearchResults";
 import { useState, useEffect } from "react";
+import backup from "./data/orders.json";
 
 export default function App() {
   return (
@@ -32,7 +33,8 @@ function TopLevel () {
   }
 
   function onFetchFail(error) {
-    console.log("Error", error);
+    console.log("Error: Failed to load from Mockaroo, loading backup data", error);
+    setPackages(backup);
     setStatus(2);
   }
 
