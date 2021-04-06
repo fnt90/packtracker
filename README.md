@@ -1,12 +1,24 @@
-# Getting Started with Create React App
+![PackTrack](src/images/packtrack.png)
+# PackTrack Package Tracker Website
+This website project was created during the Frontend Development module in Software Development Academy, iteration 9.
+
+This website is hosted by Firebase, and can be visited at <a href="https://packtrack-sda-9.web.app">https://packtrack-sda-9.web.app</a>
+
+## Project Notes
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Leaflet mapping component from <a href="https://leafletjs.com/">Leaflet</a>.
+
+React Leaflet components from <a href="https://react-leaflet.js.org/"> React Leaflet</a>.
+
+Maps sourced from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>.
+
+### React: Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+ `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +26,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+ `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+ `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,44 +39,39 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
+### React: Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Specifications
 
-### Code Splitting
+This website project is to be made using HTML, CSS, and ReactJS. The client specifications are:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+\- Must support major mobile & desktop
+browsers/layouts.
 
-### Analyzing the Bundle Size
+\- Must display a list of orders (or parcels) with some details customers need to know like order status, ETAs, pickup locations, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+\- API Endpoint: https://my.api.mockaroo.com/orders.json?key=e49e6840
 
-### Making a Progressive Web App
+## Files & Directories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project includes a 'public' folder for use with Firebase, and a source folder 'src' containing the content files. Within the source directory are folders for Javascript components, images, Javascript pages, and CSS styles.
+```
+.
+├── public
+└── src
+    ├── components
+    ├── images
+    ├── pages
+    └── styles
 
-### Advanced Configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Design Notes
+PackTrack logo created with the help of <a href ="https://www.freelogodesign.org/"> FreeLogoDesign</a>.
 
-### Deployment
+## Author
+Fiona Thompson
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created between Apr 1-6 2021 for an assignment from Software Development Academy, iteration 9.
