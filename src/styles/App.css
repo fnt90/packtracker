@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  
+}
+
+.headerBar {
+  background-color: #267388;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Lexend', sans-serif;
+}
+
+.headerBar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 1px;
+}
+.headerBar li a {
+  display: inline-block;
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.headerBar li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  text-underline-position: under;
+}
+
+.footerBar {
+  background-color: #267388;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 8px;
+  font-family: 'Lexend', sans-serif;
+}
+
+.footerBar p {
+  margin-inline-start: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  font-family: 'Lexend', sans-serif;
+  text-align: center;
+  max-width: 400px;
+}
+
+.home a {
+  color: #267388;
+}
+
+.packageTrack {
+  margin-top: 150px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 100px;
+  font-family: 'Lexend', sans-serif;
+}
+
+input[type="submit" i] {
+  background-color: #267388;
+  font-family: 'Lexend', sans-serif;
+  color: white;
+  border-radius: 4px;
+  border-width: 1px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+input[type="submit" i]:hover {
+  background-color: white;
+  color:#267388;
+  font-weight: bolder;
+}
+
+.packageTrack ul {
+  list-style: none;
+  background-color:#cce9f1;
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 400px;
+}
+
+.resultPage {
+  margin-top: 150px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 100px;
+  font-family: 'Lexend', sans-serif;
+}
+
+span {
+  font-weight: bolder
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+@media (min-width: 1px) {
+  .leaflet-container {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 600px) {
+  .leaflet-container {
+    height: 300px;
+    width: 300px;
+  }
+}
