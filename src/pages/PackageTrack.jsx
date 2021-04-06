@@ -36,7 +36,7 @@ const PackageIDList = props.packages.map((packageInfo) =>{
   return (
     <div>
       <ul>
-        <li><span>Parcel ID:</span> {packageInfo.parcel_id}</li>
+        <li><i class="fas fa-box"></i><span> Parcel ID:</span> {packageInfo.parcel_id}</li>
         <li><span>Sender:</span> {packageInfo.sender}</li>  
       </ul>
     </div>

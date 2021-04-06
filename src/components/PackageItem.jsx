@@ -6,7 +6,7 @@ export default function PackageItem({ parcel_id, status, eta, sender,
   location_name }) {
 return (
   <div>
-    <h3>Parcel ID: {parcel_id}</h3>
+    <h3><i class="fas fa-box"></i> Parcel ID: {parcel_id}</h3>
     <p><span>Status:</span> {status}</p>
     <p><span>ETA:</span> {eta}</p>
     <p><span>Sender:</span> {sender}</p>
