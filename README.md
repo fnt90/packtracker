@@ -8,11 +8,7 @@ This website is hosted by Firebase, and can be visited at <a href="https://packt
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Leaflet mapping component from <a href="https://leafletjs.com/">Leaflet</a>.
-
-React Leaflet components from <a href="https://react-leaflet.js.org/"> React Leaflet</a>.
-
-Maps sourced from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>.
+This project uses components from Leaflet (see Credits).
 
 ### React: Available Scripts
 
@@ -75,3 +71,15 @@ PackTrack logo created with the help of <a href ="https://www.freelogodesign.org
 Fiona Thompson
 
 Created between Apr 1-6 2021 for an assignment from Software Development Academy, iteration 9.
+
+## Credits
+
+Leaflet mapping component from <a href="https://leafletjs.com/">LeafletJS</a>.
+
+React Leaflet components from <a href="https://react-leaflet.js.org/"> React-Leaflet.js</a>.
+
+Maps sourced from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>.
+
+Font Lexend from <a href="https://fonts.google.com/specimen/Lexend">Google Fonts</a>.
+
+Parcel icon from <a href="https://fontawesome.com/">FontAwesome</a>.
