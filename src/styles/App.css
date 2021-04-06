@@ -137,7 +137,7 @@ span {
     
   }
   .resultPage {
-    margin-left: 200px;
+    margin-left: 100px;
   }
   .resultPage img {
   margin-left:100px;
@@ -147,6 +147,14 @@ span {
 @media (min-width: 1024px) {
   .packageTrack {
     margin-left: 200px;
+  }
+  .resultPage{
+    margin-left: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  .packageTrack {
+    margin-left: 300px;
   }
   .resultPage{
     margin-left: 400px;
