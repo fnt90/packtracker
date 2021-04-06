@@ -52,7 +52,7 @@ browsers/layouts.
 
 ## Files & Directories
 
-This project includes a 'public' folder for use with Firebase, and a source folder 'src' containing the content files. Within the source directory are folders for Javascript components, data for backup data,images, Javascript pages, and CSS styles.
+This project includes a 'public' folder for use with Firebase, and a source folder 'src' containing the content files. Within the source directory are folders for Javascript components, data for backup data, images, Javascript pages, and CSS styles.
 ```
 .
 ├── public
